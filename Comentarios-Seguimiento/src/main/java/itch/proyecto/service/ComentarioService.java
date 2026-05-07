@@ -16,5 +16,9 @@ public interface ComentarioService {
     List<ComentarioResponseDto> listarTodosLosComentarios();
 
     void eliminarComentario(Long id);
+    
+    String obtenerNombreUsuario(Long id);
+
+	List<ComentarioResponseDto> listarComentariosPorUsuarioId(Long usuarioId);
 
 }
