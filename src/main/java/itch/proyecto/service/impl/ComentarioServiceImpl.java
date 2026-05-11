@@ -103,7 +103,7 @@ public class ComentarioServiceImpl implements ComentarioService {
         // Si NO es personal autorizado, DEBE ser el dueño del comentario
         if (!esPersonal) {
             if (!comentario.getUsuarioId().equals(usuarioLogueado.getId())) {
-                throw new AccessDeniedException("No tienes permiso para ver un comentario que no te pertenece.");
+                throw new AccessDeniedException("No tienes permiso para ver un comentarios.");
             }
         }
         
