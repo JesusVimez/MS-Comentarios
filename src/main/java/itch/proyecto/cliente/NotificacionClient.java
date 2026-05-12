@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import itch.proyecto.dto.NotificacionRequestDto;
 import itch.proyecto.dto.NotificacionResponseDto;
 
-@FeignClient(name = "NOTIFICACIONES", url = "${notificaciones.url}")public interface NotificacionClient {
+@FeignClient(name = "Notificaciones")
+	public interface NotificacionClient  {
     @PostMapping
     NotificacionResponseDto crearNotificacion(@RequestBody NotificacionRequestDto requestDto);
 }

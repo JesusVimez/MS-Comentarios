@@ -1,9 +1,0 @@
-[variables]
-    JDK_VERSION = "21"
-
-[phases.setup]
-    nixPkgs = ["...", "jdk21", "maven"]
-
-
-[variables]
-GITHUB_TOKEN = '${GITHUB_TOKEN}'
