@@ -3,10 +3,10 @@
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                       http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
-   <server>
-    <id>github</id>
-    <username>ChrisBlanquet</username>
-    <password>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</password>
-</server>
+	 <server>
+	    <id>github</id>
+	    <username>ChrisBlanquet</username>
+	    <password>${env.GITHUB_TOKEN}</password>
+	</server>
   </servers>
 </settings>
